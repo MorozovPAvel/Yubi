@@ -1,0 +1,377 @@
+*{
+	font-family: "Source Sans Pro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	margin: 0;
+}
+body{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+body a{
+	text-decoration: none;
+}
+header{
+	margin-top: 10px;
+	border-bottom: 0.1px solid #e0dedc ;
+}
+.logo{
+	max-width: 1000px;
+	vertical-align: middle;
+	float: center;
+	margin: 0 auto;
+}
+.graficLogo{
+	max-width: 100%;
+	margin: 10px;
+	float: center;
+	margin-left: 90px;
+}
+.graficLogo-div{
+	display: inline-block;
+	max-width: 60%;
+	vertical-align: middle;
+	margin: 0 auto;
+}
+.searchInput-div{
+	display: inline-block;
+	max-width: 35%;
+	vertical-align: middle;
+	margin: 0 auto;
+
+}
+.searchInput{
+	border-bottom: 1px solid;
+	float: right;
+	margin-left: 900px;
+}
+.navMynav{
+	max-width: 1000px;
+	vertical-align: middle;
+	float: center;
+	margin: 0 auto;
+}
+.topnav{
+	margin: 20px;;
+	display: flex;
+	justify-content: space-around;
+}
+.topnav a:last-child{
+	display: none;
+}
+.topnav a{
+	text-decoration: none;
+	padding: 10px;
+	color: #8a5f4a;
+	font-size: 15px;
+	text-shadow: 0.2px 0.3px #5e2003;
+	border-bottom: 1px solid #ffffff;
+}
+.topnav a:hover{
+	color: #5c2309;
+	border-bottom: 1px solid #754d3a;
+	transition: 1s ease;
+}
+
+.desctop-border{
+	display: flex;
+	align-items: center;
+	justify-content:center;
+	margin: 20px;
+	margin-top: 20px;
+	width: 100%;
+	position: relative;
+	border-bottom: 0.1px solid #e0dedc;
+}
+
+
+/* Go to Top кнопка */
+.btn-top{
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 40px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	background-color: #e4e1e1;
+	color: #fff;
+	cursor: pointer;
+	padding: 15px 40px;
+	border-radius: 10px;
+}
+.btn-top:hover{
+	background-color: #837e7e;
+}
+
+/*FOOTER*/
+footer{
+	background-color: #e4e1e1;
+	position: relative;
+	float: bottom;
+	
+}
+.footerSocialItems{
+	display: flex;
+	justify-content: space-around;
+}
+.footerSocialItems a{
+	margin: 0px 5px;
+	color: black;
+}
+.footer-inform{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 10px;
+}
+
+
+/* распродажа*/
+.sale-inform{
+	width: 100%;
+	height: 60px;
+	text-align: center;
+	border-bottom: 0.1px solid #e0dedc;
+}
+.sale-items img{
+  width: 80px;
+	height: 80px;
+	float: center;
+}
+.sale-items p, h4{
+	text-align: center;
+	padding: 2px;
+}
+
+
+/*слайдер АККОРДИОН норм только если без текста*/
+.sale-slidewrapper{
+	min-width: 650px;
+	margin: 0 auto;
+}
+ul.sale-accordion{
+	display: flex;
+	justify-content: center;
+	padding: 0;
+}
+ul.sale-accordion li{
+	width: 50px;
+	overflow: hidden;
+	padding: 5px 5px 0;
+	cursor: pointer;
+	display: block;
+	-webkit-transition: all 0.9s;
+	-moz-transition: all 0.9s;
+	-ms-transition-: all 0.9s;
+	-o-transition: all 0.9s;
+	transition: all 0.9s;
+	-webkit-box-shadow: 1px 3px 15px #7e807e;
+	-moz-box-shadow: 1px 3px 15px #7e807e;
+	box-shadow: 1px 3px 15px #7e807e;
+}
+ul.sale-accordion li:hover{
+	width: 300px;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	-ms-transition-: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
+	-webkit-box-shadow: 1px 3px 15px #4d574d;
+	-moz-box-shadow: 1px 3px 15px #4d574d;
+	box-shadow: 1px 3px 15px #4d574d;
+}
+ul.sale-accordion li:nth-child(1){
+	width: 300px;
+}
+ul.sale-accordion:hover li:nth-child(1){
+	width: 50px;
+}
+ul.sale-accordion li:nth-child(1):hover{
+	width: 300px;
+}
+
+/* Новинки*/
+.new-product{
+	margin-top: 20px;
+	width: 100%;
+	height: 60px;
+	text-align: center;
+	border-bottom: 0.1px solid #e0dedc;
+}
+.newProdcut-Slider{
+	height: 200px;
+}
+
+/*слайдер простой автоматический*/
+#slides{
+	position: relative;
+	height: 300px;
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+.slide{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	z-index: 1;
+
+		-webkit-transition: opacity 3s;
+    -moz-transition: opacity 3s;
+    -o-transition: opacity 3s;
+		transition: opacity 3s;
+	
+	font-size: 40px;
+	padding: 40px;
+	box-sizing: border-box;
+}
+.showing{
+	opacity: 1;
+	z-index: 2;
+}
+.slide img{
+	width: 180px;
+	height: 180px;
+	float: center;
+}
+
+/*слайдер с кнопками*/
+.slider2{
+    max-width: 90%;
+    position: relative;
+    margin: auto;
+    height: 300px;
+    margin-bottom: 15px;
+}
+.slider2 .item img{
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    border: none !important;
+    box-shadow: none !important;
+}
+.slider2 .prev, .slider2 .next{
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6 ease;
+	border-radius: 0 3px 3px 0;
+}
+.slider2 .next{
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+.slider2 .prev:hover,
+.slider2 .next:hover {
+    background-color: #837e7e;
+    border-radius: 10px;
+}
+.slideText {
+    position: absolute;
+    color: #fff;
+    font-size: 35px;
+/* Выравнивание текста по горизонтали и по вертикали*/
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+ /* Тень*/
+    text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+}
+.slider-dots{
+	text-align: center;
+}
+.slider-dots_item{
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active,
+.slider-dots_item:hover {
+    background-color: #aaa;
+}
+.slider2 .item {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+@media screen and (max-width: 768px) {
+	.topnav a:not(:last-child){
+		display: none;
+	}
+	.topnav a.icon{
+		float: right;
+		display: block;
+		color: #8a5f4a;
+		font-size: 20px;
+		
+	}
+	nav{
+		width: 100%;
+	}
+	.topnav.responsive{
+		position: relative;
+		display: flex;
+		flex-direction: column;
+	}
+	.topnav.responsive a.icon{
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.topnav.responsive a{
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+	}
+	.advantages_item{
+		width: 45%;
+	}
+	.btn-top{
+		margin-bottom: 50px;
+	}
+	
+}
